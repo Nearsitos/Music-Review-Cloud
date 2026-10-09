@@ -4,7 +4,7 @@ Music Review Cloud is a Python command-line application for storing album rating
 
 The application also receives live notifications when album data changes in Firestore.
 
-Demonstration and code walkthrough video: **REPLACE_WITH_VIDEO_LINK**
+Demonstration and code walkthrough video: [Demo video](https://youtu.be/m03ue_AcNG4)
 
 ## Instructions for Build and Use
 
@@ -53,15 +53,15 @@ Instructions for using the software:
 1. Add an album:
 
    ```powershell
-   python app.py add --title "Un Verano Sin Ti" --artist "Bad Bunny" --rating 4.5 --review "One of my favorite summer albums."
+   python app.py add --title "Album/Song Title" --artist "Artist" --rating 1 --review "Your review"
    ```
 
 2. View the collection or filter it:
 
    ```powershell
    python app.py list
-   python app.py list --artist "Bad Bunny"
-   python app.py list --search "verano"
+   python app.py list --artist "Artist"
+   python app.py list --search "Album/Song"
    ```
 
    The artist filter runs in Firestore. Substring search filters the retrieved documents locally.
